@@ -4836,7 +4836,7 @@
   (gr_line (start 137.79 75.29) (end 183.79 75.29) (layer Edge.Cuts) (width 0.05) (tstamp 5FEB9B3D))
   (gr_line (start 213.12 131.29) (end 213.12 64.29) (layer Edge.Cuts) (width 0.05) (tstamp 5FEB9B3C))
   (gr_line (start 117.79 131.29) (end 117.79 64.29) (layer Edge.Cuts) (width 0.05) (tstamp 5FEB9B3B))
-  (gr_text "Big Red Buss- PCB V 0.1.0" (at 231.42 173.66) (layer Dwgs.User) (tstamp 5FE61ED4)
+  (gr_text "Control PCB" (at 231.42 173.66) (layer Dwgs.User) (tstamp 5FE61ED4)
     (effects (font (size 4 4) (thickness 0.15)))
   )
   (gr_line (start 99.44 85.29) (end 107.03 93.74) (layer F.SilkS) (width 1.5) (tstamp 5FE616B8))
