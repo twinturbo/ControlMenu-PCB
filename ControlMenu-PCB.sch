@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L AA_ROB:PB-86A-robsym1 100s1
+L AA-ROBSCH:PB-86A 100s1
 U 1 1 5FEB2BAB
 P 4300 3350
 F 0 "100s1" H 4550 4225 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 4300 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AA_ROB:PB-86A-robsym1 10s1
+L AA-ROBSCH:PB-86A 10s1
 U 1 1 5FEB3BFC
 P 5600 3350
 F 0 "10s1" H 5850 4225 50  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 5600 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AA_ROB:PB-86A-robsym1 Enter1
+L AA-ROBSCH:PB-86A Enter1
 U 1 1 5FEB56A3
 P 8300 3350
 F 0 "Enter1" H 8550 4225 50  0000 C CNN
@@ -111,8 +111,6 @@ Wire Wire Line
 	9050 2850 9250 2850
 Wire Wire Line
 	9250 2850 9250 2800
-Wire Wire Line
-	9250 2300 9800 2300
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5FEC2557
@@ -142,8 +140,6 @@ Text Notes 9700 2500 0    50   ~ 0
 SCL
 Text Notes 9700 2600 0    50   ~ 0
 GND
-Text Label 9250 2450 0    50   ~ 0
-5V
 Text Label 9450 2400 0    50   ~ 0
 SDA
 Text Label 9500 2500 0    50   ~ 0
@@ -161,7 +157,7 @@ Enter
 Wire Wire Line
 	4000 2850 3900 2850
 $Comp
-L AA_ROB:PB-86A-robsym1 1s1
+L AA-ROBSCH:PB-86A 1s1
 U 1 1 5FEB4A66
 P 6900 3350
 F 0 "1s1" H 7150 4225 50  0000 C CNN
@@ -206,15 +202,15 @@ Wire Wire Line
 Wire Wire Line
 	3900 2800 5050 2800
 Text Notes 7150 6850 0    50   ~ 0
-Version V0.1.1
-Wire Wire Line
-	9250 2150 9250 2300
-Wire Wire Line
-	2400 2150 9250 2150
+Version V0.1.2
 Wire Wire Line
 	9250 2800 9450 2800
 Connection ~ 9250 2800
 Connection ~ 9450 2800
 Wire Wire Line
 	9450 2800 9450 2600
+Wire Wire Line
+	2400 2150 9800 2150
+Wire Wire Line
+	9800 2150 9800 2300
 $EndSCHEMATC
