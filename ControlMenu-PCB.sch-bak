@@ -202,7 +202,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 2800 5050 2800
 Text Notes 7150 6850 0    50   ~ 0
-Version V0.1.1
+Version V0.1.2
 Wire Wire Line
 	9250 2800 9450 2800
 Connection ~ 9250 2800
