@@ -98,15 +98,11 @@ Wire Wire Line
 Wire Wire Line
 	3500 3350 9400 3350
 Wire Wire Line
-	9400 3350 9400 2500
-Wire Wire Line
 	2400 2850 3400 2850
 Wire Wire Line
 	3400 2850 3400 3400
 Wire Wire Line
 	9450 3400 9450 2800
-Wire Wire Line
-	9450 2600 9800 2600
 Wire Wire Line
 	9050 2850 9250 2850
 Wire Wire Line
@@ -115,16 +111,14 @@ $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5FEC2557
 P 10000 2400
-F 0 "J2" H 10080 2392 50  0000 L CNN
-F 1 "Conn_01x04" H 10080 2301 50  0000 L CNN
+F 0 "J2" H 10150 2750 50  0000 L CNN
+F 1 "Conn_01x04" H 10250 2750 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10000 2400 50  0001 C CNN
 F 3 "~" H 10000 2400 50  0001 C CNN
 	1    10000 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9800 2500 9400 2500
-Text Notes 9750 2300 0    50   ~ 0
+Text Notes 9700 2600 0    50   ~ 0
 5V
 Wire Wire Line
 	3400 3400 9450 3400
@@ -136,15 +130,15 @@ Wire Wire Line
 	9350 3300 3600 3300
 Text Notes 9700 2400 0    50   ~ 0
 SDA
+Text Notes 9500 2300 0    50   ~ 0
+SCL
 Text Notes 9700 2500 0    50   ~ 0
-SCL
-Text Notes 9700 2600 0    50   ~ 0
 GND
-Text Label 9450 2400 0    50   ~ 0
+Text Label 9500 2400 0    50   ~ 0
 SDA
-Text Label 9500 2500 0    50   ~ 0
+Text Label 9700 2300 0    50   ~ 0
 SCL
-Text Label 9550 2600 0    50   ~ 0
+Text Label 9700 2500 0    50   ~ 0
 GND
 Text Label 2600 2250 0    50   ~ 0
 100s
@@ -202,7 +196,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 2800 5050 2800
 Text Notes 7150 6850 0    50   ~ 0
-Version V0.1.2
+Version V0.1.4\n
 Wire Wire Line
 	9250 2800 9450 2800
 Connection ~ 9250 2800
@@ -210,7 +204,19 @@ Connection ~ 9450 2800
 Wire Wire Line
 	9450 2800 9450 2600
 Wire Wire Line
-	2400 2150 9800 2150
+	2400 2150 9650 2150
 Wire Wire Line
-	9800 2150 9800 2300
+	9400 2300 9800 2300
+Wire Wire Line
+	9400 2300 9400 3350
+Wire Wire Line
+	9650 2150 9650 2600
+Wire Wire Line
+	9650 2600 9800 2600
+Wire Wire Line
+	9450 2600 9600 2600
+Wire Wire Line
+	9600 2600 9600 2500
+Wire Wire Line
+	9600 2500 9800 2500
 $EndSCHEMATC
