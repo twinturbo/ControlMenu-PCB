@@ -1,0 +1,347 @@
+EESchema Schematic File Version 5
+EELAYER 43 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 5850 2250
+Connection ~ 6050 2250
+Connection ~ 6100 4600
+Connection ~ 6100 5200
+Connection ~ 6100 5850
+Connection ~ 6100 6500
+Connection ~ 6100 7250
+Connection ~ 6250 2250
+Connection ~ 6450 2250
+Connection ~ 6650 2250
+Connection ~ 6800 2250
+Wire Wire Line
+	2100 2750 2100 3000
+Wire Wire Line
+	2250 2750 2100 2750
+Wire Wire Line
+	2250 2850 2250 3000
+Wire Wire Line
+	5650 2250 5850 2250
+Wire Wire Line
+	5850 2250 6050 2250
+Wire Wire Line
+	5900 7250 6100 7250
+Wire Wire Line
+	6050 2250 6250 2250
+Wire Wire Line
+	6100 3950 5950 3950
+Wire Wire Line
+	6100 4600 5950 4600
+Wire Wire Line
+	6100 4600 6100 3950
+Wire Wire Line
+	6100 5200 5950 5200
+Wire Wire Line
+	6100 5200 6100 4600
+Wire Wire Line
+	6100 5850 5950 5850
+Wire Wire Line
+	6100 5850 6100 5200
+Wire Wire Line
+	6100 6500 5900 6500
+Wire Wire Line
+	6100 6500 6100 5850
+Wire Wire Line
+	6100 7250 6100 6500
+Wire Wire Line
+	6250 2250 6450 2250
+Wire Wire Line
+	6450 2250 6650 2250
+Wire Wire Line
+	6650 2250 6800 2250
+Wire Wire Line
+	6800 2250 6900 2250
+Wire Wire Line
+	9600 2500 9800 2500
+Wire Wire Line
+	9600 2600 9600 2500
+Text Notes 7150 6850 0    50   ~ 0
+Version V0.1.4\n
+Text Notes 9700 2400 0    50   ~ 0
+SDA
+Text Label 9450 2300 0    50   ~ 0
+SCL
+Text GLabel 2250 1950 0    50   Input ~ 0
+BUTTON6
+Text GLabel 2250 2050 0    50   Input ~ 0
+BUTTON5
+Text GLabel 2250 2150 0    50   Input ~ 0
+BUTTON4
+Text GLabel 2250 2250 0    50   Input ~ 0
+BUTTON3
+Text GLabel 2250 2350 0    50   Input ~ 0
+BUTTON2
+Text GLabel 2250 2450 0    50   Input ~ 0
+BUTTON1
+Text GLabel 2250 2550 0    50   Output ~ 0
+SCL
+Text GLabel 2250 2650 0    50   Output ~ 0
+SDA
+Text GLabel 4850 6650 0    50   Output ~ 0
+BUTTON2
+Text GLabel 4850 7400 0    50   Output ~ 0
+BUTTON1
+Text GLabel 4900 4100 0    50   Output ~ 0
+BUTTON6
+Text GLabel 4900 4750 0    50   Output ~ 0
+BUTTON5
+Text GLabel 4900 5350 0    50   Output ~ 0
+BUTTON4
+Text GLabel 4900 6000 0    50   Output ~ 0
+BUTTON3
+Text GLabel 9800 2300 0    50   Input ~ 0
+SCL
+Text GLabel 9800 2400 0    50   Input ~ 0
+SDA
+$Comp
+L power:+5V #PWR05
+U 1 1 00000000
+P 2100 3000
+F 0 "#PWR05" H 2100 2850 50  0001 C CNN
+F 1 "+5V" H 2100 3163 50  0000 C CNN
+F 2 "" H 2100 3000 50  0001 C CNN
+F 3 "" H 2100 3000 50  0001 C CNN
+	1    2100 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 00000000
+P 9600 2600
+F 0 "#PWR01" H 9600 2450 50  0001 C CNN
+F 1 "+5V" H 9600 2763 50  0000 C CNN
+F 2 "" H 9600 2600 50  0001 C CNN
+F 3 "" H 9600 2600 50  0001 C CNN
+	1    9600 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 00000000
+P 2250 3000
+F 0 "#PWR04" H 2250 2750 50  0001 C CNN
+F 1 "GND" H 2250 2837 50  0000 C CNN
+F 2 "" H 2250 3000 50  0001 C CNN
+F 3 "" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 00000000
+P 6100 7250
+F 0 "#PWR03" H 6100 7000 50  0001 C CNN
+F 1 "GND" H 6100 7087 50  0000 C CNN
+F 2 "" H 6100 7250 50  0001 C CNN
+F 3 "" H 6100 7250 50  0001 C CNN
+	1    6100 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 00000000
+P 6800 2250
+F 0 "#PWR06" H 6800 2000 50  0001 C CNN
+F 1 "GND" H 6800 2087 50  0000 C CNN
+F 2 "" H 6800 2250 50  0001 C CNN
+F 3 "" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 00000000
+P 9800 2600
+F 0 "#PWR02" H 9800 2350 50  0001 C CNN
+F 1 "GND" H 9800 2437 50  0000 C CNN
+F 2 "" H 9800 2600 50  0001 C CNN
+F 3 "" H 9800 2600 50  0001 C CNN
+	1    9800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 00000000
+P 5650 2150
+F 0 "H7" H 5750 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5750 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5650 2150 50  0001 C CNN
+F 3 "~" H 5650 2150 50  0001 C CNN
+	1    5650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 00000000
+P 5850 2150
+F 0 "H6" H 5950 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5950 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5850 2150 50  0001 C CNN
+F 3 "~" H 5850 2150 50  0001 C CNN
+	1    5850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 00000000
+P 6050 2150
+F 0 "H5" H 6150 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6150 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6050 2150 50  0001 C CNN
+F 3 "~" H 6050 2150 50  0001 C CNN
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 00000000
+P 6250 2150
+F 0 "H4" H 6350 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6350 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6250 2150 50  0001 C CNN
+F 3 "~" H 6250 2150 50  0001 C CNN
+	1    6250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 00000000
+P 6450 2150
+F 0 "H3" H 6550 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6550 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6450 2150 50  0001 C CNN
+F 3 "~" H 6450 2150 50  0001 C CNN
+	1    6450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 00000000
+P 6650 2150
+F 0 "H2" H 6750 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6750 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6650 2150 50  0001 C CNN
+F 3 "~" H 6650 2150 50  0001 C CNN
+	1    6650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 00000000
+P 6900 2150
+F 0 "H1" H 7000 2225 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7000 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6900 2150 50  0001 C CNN
+F 3 "~" H 6900 2150 50  0001 C CNN
+	1    6900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5FEC2557
+P 10000 2400
+F 0 "J2" H 10150 2750 50  0000 L CNN
+F 1 "Conn_01x04" H 10250 2750 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10000 2400 50  0001 C CNN
+F 3 "~" H 10000 2400 50  0001 C CNN
+	1    10000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5FEB6A94
+P 2450 2450
+F 0 "J1" H 2368 1825 50  0000 C CNN
+F 1 "Conn_01x10" H 2368 1916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 2450 2450 50  0001 C CNN
+F 3 "~" H 2450 2450 50  0001 C CNN
+	1    2450 2450
+	1    0    0    1   
+$EndComp
+$Comp
+L AA-ROBSCH:PB-86A-robsym1 BUT-2
+U 1 1 5FEB4A66
+P 5150 7000
+F 0 "BUT-2" H 5400 7875 50  0000 C CNN
+F 1 "PB-86A" H 5400 7784 50  0000 C CNN
+F 2 "AA-ROB-FULL:PB86-A-FP" H 5150 7000 50  0001 C CNN
+F 3 "" H 5150 7000 50  0001 C CNN
+	1    5150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA-ROBSCH:PB-86A-robsym1 BUT-1
+U 1 1 5FEB56A3
+P 5150 7750
+F 0 "BUT-1" H 5400 8625 50  0000 C CNN
+F 1 "PB-86A" H 5400 8534 50  0000 C CNN
+F 2 "AA-ROB-FULL:PB86-A-FP" H 5150 7750 50  0001 C CNN
+F 3 "" H 5150 7750 50  0001 C CNN
+	1    5150 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA-ROBSCH:PB-86A-robsym1 BUT-6
+U 1 1 00000000
+P 5200 4450
+F 0 "BUT-6" H 5450 5325 50  0000 C CNN
+F 1 "PB-86A" H 5450 5234 50  0000 C CNN
+F 2 "AA-ROB-FULL:PB86-A-FP" H 5200 4450 50  0001 C CNN
+F 3 "" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA-ROBSCH:PB-86A-robsym1 BUT-5
+U 1 1 00000000
+P 5200 5100
+F 0 "BUT-5" H 5450 5975 50  0000 C CNN
+F 1 "PB-86A" H 5450 5884 50  0000 C CNN
+F 2 "AA-ROB-FULL:PB86-A-FP" H 5200 5100 50  0001 C CNN
+F 3 "" H 5200 5100 50  0001 C CNN
+	1    5200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA-ROBSCH:PB-86A-robsym1 BUT-4
+U 1 1 5FEB2BAB
+P 5200 5700
+F 0 "BUT-4" H 5450 6575 50  0000 C CNN
+F 1 "PB-86A" H 5450 6484 50  0000 C CNN
+F 2 "AA-ROB-FULL:PB86-A-FP" H 5200 5700 50  0001 C CNN
+F 3 "" H 5200 5700 50  0001 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA-ROBSCH:PB-86A-robsym1 BUT-3
+U 1 1 5FEB3BFC
+P 5200 6350
+F 0 "BUT-3" H 5450 7225 50  0000 C CNN
+F 1 "PB-86A" H 5450 7134 50  0000 C CNN
+F 2 "AA-ROB-FULL:PB86-A-FP" H 5200 6350 50  0001 C CNN
+F 3 "" H 5200 6350 50  0001 C CNN
+	1    5200 6350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

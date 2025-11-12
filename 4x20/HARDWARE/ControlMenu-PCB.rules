@@ -1,0 +1,79 @@
+
+(rules PCB ControlMenu-PCB
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 266)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    BUTTON1 "unconnected-(BUT-1-NC-Pad3)" GND "unconnected-(BUT-1-LED-Cath-Pad6)" "unconnected-(BUT-1-LED_Anno-Pad5)" BUTTON2 "unconnected-(BUT-2-NC-Pad3)" "unconnected-(BUT-2-LED-Cath-Pad6)"
+    "unconnected-(BUT-2-LED_Anno-Pad5)" BUTTON3 "unconnected-(BUT-3-NC-Pad3)" "unconnected-(BUT-3-LED-Cath-Pad6)" "unconnected-(BUT-3-LED_Anno-Pad5)" BUTTON4 "unconnected-(BUT-4-NC-Pad3)" "unconnected-(BUT-4-LED-Cath-Pad6)"
+    "unconnected-(BUT-4-LED_Anno-Pad5)" BUTTON5 "unconnected-(BUT-5-NC-Pad3)" "unconnected-(BUT-5-LED-Cath-Pad6)" "unconnected-(BUT-5-LED_Anno-Pad5)" BUTTON6 "unconnected-(BUT-6-NC-Pad3)" "unconnected-(BUT-6-LED-Cath-Pad6)"
+    "unconnected-(BUT-6-LED_Anno-Pad5)" +5V SDA SCL
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
